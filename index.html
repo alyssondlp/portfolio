@@ -3,31 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alysson Ponciano</title>
+  <title>Alysson Ponciano | Portfólio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+    * {
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    h1 {
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
       color: #007acc;
+      margin-bottom: 1rem;
+    }
+    .projeto {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
     }
     a {
       color: #007acc;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>Olá, eu sou Alysson Ponciano 👋</h1>
-  <p>Desenvolvedor Front-End | UI/UX Enthusiast</p>
-  <p>
-    <a href="https://github.com/alyssonponciano" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/alysson-ponciano/" target="_blank">LinkedIn</a>
-  </p>
+
+  <header>
+    <h1>Alysson Ponciano</h1>
+    <p>Desenvolvedor Front-End | UI/UX Enthusiast</p>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>🧠 Sobre mim</h2>
+    <p>Sou apaixonado por transformar ideias em interfaces bonitas e funcionais. Tenho experiência com HTML, CSS, JavaScript e frameworks modernos como React. Gosto de criar experiências de usuário fluídas e acessíveis.</p>
+  </section>
+
+  <section id="projetos">
+    <h2>🚀 Projetos</h2>
+
+    <div class="projeto">
+      <h3>Portfolio Pessoal</h3>
+      <p>Este próprio site! Criado com HTML e CSS puro, hospedado no GitHub Pages.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+    <div class="projeto">
+      <h3>App de Tarefas</h3>
+      <p>Aplicação simples para gerenciamento de tarefas feita com JavaScript.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+    <!-- Você pode adicionar mais projetos assim -->
+  </section>
+
+  <section id="contato">
+    <h2>📫 Contato</h2>
+    <p>Vamos conversar? Me mande uma mensagem!</p>
+    <ul>
+      <li>Email: <a href="mailto:alyssonponciano@gmail.com">alyssonponciano@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/alysson-ponciano" target="_blank">/in/alysson-ponciano</a></li>
+      <li>GitHub: <a href="https://github.com/alyssonponciano" target="_blank">@alyssonponciano</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 - Desenvolvido por Alysson Ponciano</p>
+  </footer>
+
 </body>
 </html>
