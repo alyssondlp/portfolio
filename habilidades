@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Habilidades | Alysson Ponciano</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Habilidades Técnicas</h1>
+    <nav>
+      <a href="index.html">Sobre</a>
+      <a href="formacao.html">Formação</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li><strong>Python</strong>, <strong>SQL</strong>, <strong>MATLAB</strong></li>
+      <li>Power BI, Excel Avançado</li>
+      <li>AutoCAD, PLC, Git, etc.</li>
+    </ul>
+  </section>
+
+  <footer>© 2025 - Desenvolvido por Alysson Ponciano</footer>
+</body>
+</html>
