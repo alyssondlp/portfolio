@@ -1,3 +1,4 @@
+/* Estilo geral do corpo da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -7,23 +8,29 @@ body {
     color: #333;
 }
 
+/* Container principal */
 .container {
     width: 90%;
     max-width: 900px;
     margin: auto;
     padding: 20px;
-    background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Header com fundo azul e texto branco */
+/* Aplica fundo branco apenas no conteúdo principal */
+main .container {
+    background-color: white;
+}
+
+/* Estilo do cabeçalho */
 header {
-    background: #0077b5;
-    color: black;
+    background: #0077b5; /* Azul LinkedIn */
+    color: white;
     padding: 20px 0;
     text-align: center;
 }
 
+/* Imagem de perfil */
 header img {
     width: 120px;
     height: 120px;
@@ -32,20 +39,24 @@ header img {
     margin-bottom: 10px;
 }
 
-/* Força cor branca nos elementos dentro do header */
+/* Força a cor branca no texto do cabeçalho */
 header h1,
 header p,
 header a {
-    color: black;
+    color: white;
 }
 
-/* Link padrão no corpo do site */
+/* Estilo dos links */
 a {
     color: #0077b5;
     text-decoration: none;
 }
 
-/* Cabeçalhos nas seções */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Títulos */
 h1, h2 {
     color: #0077b5;
 }
