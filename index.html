@@ -7,102 +7,131 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="assets/perfil.jpg" alt="Foto de perfil de Alysson">
-            <h1>Alysson de Lima Ponciano</h1>
-            <p>M.Sc. student | Análise de dados | SQL | Power BI | PCM | Engenharia Elétrica</p>
-            <p><strong>Fortaleza, Ceará, Brasil</strong></p>
-            <p><a href="mailto:alyssondelima@hotmail.com.br">alyssondelima@hotmail.com.br</a></p>
-        </div>
-    </header>
 
-    <main class="container">
-        <section>
-            <h2>Resumo</h2>
+<nav>
+    <ul>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#idiomas">Idiomas</a></li>
+        <li><a href="#certificacoes">Certificações</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#academica">Acadêmica</a></li>
+        <li><a href="#publicacoes">Publicações</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container">
+        <img src="assets/perfil.jpg" alt="Foto de Alysson de Lima Ponciano">
+        <h1>Alysson de Lima Ponciano</h1>
+        <p>M.Sc. student | Análise de dados | SQL | Power BI | PCM | Engenharia Elétrica</p>
+        <p><strong>Fortaleza, Ceará, Brasil</strong></p>
+        <p><a href="mailto:alyssondelima@hotmail.com.br">alyssondelima@hotmail.com.br</a></p>
+    </div>
+</header>
+
+<main class="container">
+
+    <section id="resumo" class="collapsible">
+        <h2>Resumo</h2>
+        <div class="content">
             <p>Olá, meu nome é Alysson de Lima Ponciano! Tenho experiência profissional em manutenção, tecnologia, análise de dados e atualmente curso mestrado em Engenharia Elétrica na UFC. Apaixonado por tecnologia, dados e melhorias contínuas. Meus principais conhecimentos envolvem Power BI, SQL, Excel, PCM, ERP e automação de relatórios.</p>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>Formação Acadêmica</h2>
+    <section id="formacao" class="collapsible">
+        <h2>Formação Acadêmica</h2>
+        <div class="content">
             <ul>
                 <li><strong>Mestrado</strong> em Engenharia Elétrica – UFC (desde 2023)</li>
                 <li><strong>Bacharelado</strong> em Engenharia Elétrica – UFC (2018–2022, Summa Cum Laude)</li>
                 <li><strong>Técnico</strong> em Redes de Computadores – EEEP Paulo VI (2015–2017)</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>Idiomas</h2>
+    <section id="idiomas" class="collapsible">
+        <h2>Idiomas</h2>
+        <div class="content">
             <ul>
                 <li>Português (nativo)</li>
                 <li>Inglês (intermediário)</li>
                 <li>Espanhol (básico)</li>
                 <li>Italiano e Alemão (em aprendizado)</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>Certificações</h2>
+    <section id="certificacoes" class="collapsible">
+        <h2>Certificações</h2>
+        <div class="content">
             <ul>
-                <li><strong>Fundação Bradesco</strong> (Excel Básico, Intermediário e Avançado, Modelagem de dados);</li>
-                <li><strong>Voitto</strong> (Estruturação de OKRs, Fundamentos de SQL, Fundamentos de Python, Python intermediário, Tópicos avançados em Python para análises de dados, 
-                    Fundamentos de World Class Manufacturing, Fundamentos de AutoCAD 2D);</li>
-                <li><strong>PET EE UFC</strong> (Minicurso fotovoltaico, CLP, AutoCAD, Python, LinkedIn, Latex, PSIM, Proteus, Excel);</li>
-                <li><strong>DELL/IDESCO</strong> (Introdução à Lógica de Programação);</li>
-                <li><strong>SENAI</strong> (Introdução ao hidrogênio verde);</li>
-                <li><strong>SEBRAE</strong> (Curso formação de jovens empreendedores);</li>
-                <li><strong>MOTIM</strong> (EXCEL, Power BI, VBA);</li>
-                <li><strong>Data Science Academy</strong> (Microsoft Power BI Para BusinessIntelligence e Data Science).</li>
+                <li><strong>Fundação Bradesco</strong>: Excel Básico, Intermediário e Avançado, Modelagem de dados</li>
+                <li><strong>Voitto</strong>: OKRs, SQL, Python básico a avançado, WCM, AutoCAD</li>
+                <li><strong>PET EE UFC</strong>: Fotovoltaico, CLP, Python, Excel, etc.</li>
+                <li><strong>DELL/IDESCO</strong>: Lógica de Programação</li>
+                <li><strong>SENAI</strong>: Hidrogênio verde</li>
+                <li><strong>SEBRAE</strong>: Formação de jovens empreendedores</li>
+                <li><strong>MOTIM</strong>: Excel, Power BI, VBA</li>
+                <li><strong>Data Science Academy</strong>: Power BI para Business Intelligence</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>Experiência Profissional</h2>
+    <section id="experiencia" class="collapsible">
+        <h2>Experiência Profissional</h2>
+        <div class="content">
             <h3>Shopping Iguatemi Fortaleza</h3>
-            <p><strong>Técnico de PCM Jr.</strong> (jul/2022 - jul/2023)<br>
-            Gestão predial, criação de dashboards em Power BI e Excel, estruturação de base de ativos, planejamento de OSs, ERP Protheus.</p>
-
-            <p><strong>Estagiário de Manutenção</strong> (jan/2022 - jun/2022)<br>
-            Coordenação de equipes, criação de relatórios e processos em Excel, acompanhamento de manutenção predial e elaboração de projetos em AutoCAD.</p>
+            <p><strong>Técnico de PCM Jr.</strong> (jul/2022 - jul/2023)<br> Gestão predial, dashboards, ativos, ERP.</p>
+            <p><strong>Estagiário de Manutenção</strong> (jan/2022 - jun/2022)<br> Coordenação, relatórios, manutenção, AutoCAD.</p>
 
             <h3>Secretaria Executiva Regional IV</h3>
-            <p><strong>Estágio Estudantil</strong> (ago/2017 - dez/2017)<br>
-            Manutenção de computadores, inventário, suporte técnico e redes.</p>
-        </section>
+            <p><strong>Estágio Estudantil</strong> (ago/2017 - dez/2017)<br> Manutenção de computadores, suporte e redes.</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Experiência Acadêmica</h2>
+    <section id="academica" class="collapsible">
+        <h2>Experiência Acadêmica</h2>
+        <div class="content">
             <h3>Ramo Estudantil IEEE UFC</h3>
-            <p><strong>Vice-presidente</strong> (jun/2021 - mar/2022)<br></p>
-            <p></p>Atividades: Gerenciamento de equipe, organização de eventos, liderança de atividades.</p> 
-            <p>Prêmios: Premiação nacional de Ramo Revelação e Ramo Exemplar.</p>
-            <p>Habilidades: Liderança, Excel, Power Point, Oratória, Gestão de Equipes</p>
+            <p><strong>Vice-presidente</strong> (jun/2021 - mar/2022)</p>
+            <p>Atividades: Liderança, eventos, gestão. Prêmios: Ramo Revelação e Exemplar.</p>
 
             <h3>Universidade Federal do Ceará</h3>
-            <p><strong>Bolsista de Iniciação à Docência</strong> (mar/2020 - mar/2021)<br>
-            <p>Atividades: Monitor de disciplinas, apoio a práticas de laboratório e apresentação de pesquisa.</p>
-            <p>Habilidades: C, C++, Ensino, Documentação, FRDM-KL25z.</p>
+            <p><strong>Bolsista de Iniciação à Docência</strong> (mar/2020 - mar/2021)</p>
+            <p>Atividades: Monitoria, práticas, ensino técnico.</p>
 
             <h3>Grupo de Desenvolvimento Aeroespacial – GDAe</h3>
-            <p><strong>Gerente de Eletrônica</strong> (abr/2019 - dez/2019)<br></p>
+            <p><strong>Gerente de Eletrônica</strong> (abr/2019 - dez/2019)</p>
             <p><strong>Projetista Eletrônico</strong> (mai/2018 - abr/2019)</p>
-            <p></p>Atividades: Gestão de equipe, lançamentos de foguetes, confecção de relatórios e documentações.</p>
-            <p>Habilidades: EasyEDA, Trello, Excel, Modelagem de placas, Documentação</p>
+        </div>
+    </section>
 
-            
-        </section>
+    <section id="publicacoes" class="collapsible">
+        <h2>Publicações</h2>
+        <div class="content">
+            <ul>
+                <li><strong>TCC:</strong> <a href="https://repositorio.ufc.br/handle/riufc/72262" target="_blank">Módulo didático com a placa FRDM-KL25Z</a></li>
+                <li><strong>EU 2021:</strong> <a href="https://periodicos.ufc.br/eu/article/view/67530" target="_blank">Atualização da disciplina de microprocessadores</a></li>
+                <li><strong>EU 2018:</strong> <a href="https://periodicos.ufc.br/eu/article/view/37162" target="_blank">Análise de microcontroladores para foguetes</a></li>
+            </ul>
+        </div>
+    </section>
 
-        <section>
-            <h2>Publicações</h2>
-            <li><strong>TCC:</strong><a href="https://repositorio.ufc.br/handle/riufc/72262" target="_blank">Módulo didático com a placa FRDM-KL25Z</a></li>
-            <li><strong>Encontros Universitários UFC 2021:</strong><a href="https://periodicos.ufc.br/eu/article/view/67530" target="_blank">ATUALIZAÇÃO DA DISCIPLINA DE MICROPROCESSADORES: APRESENTANDO A ARQUITETURA ARM COM A PLACA FRDM-KL25Z (2021)</a></li>
-            <li><strong>Encontros Universitários UFC 2018:</strong><a href="https://periodicos.ufc.br/eu/article/view/37162" target="_blank">ANÁLISE DE MICROCONTROLADORES PARA FOGUETES DE PEQUENO E MÉDIO PORTE (2018)</a></li>       
-        </section>
+</main>
 
-        <footer>
-            <p>© 2025 Alysson de Lima Ponciano | Desenvolvido com GitHub Pages</p>
-        </footer>
-    </main>
+<footer>
+    <p>© 2025 Alysson de Lima Ponciano | Desenvolvido com GitHub Pages</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.collapsible h2').forEach(h2 => {
+        h2.addEventListener('click', () => {
+            const section = h2.parentElement;
+            section.classList.toggle('active');
+        });
+    });
+</script>
+
 </body>
 </html>
