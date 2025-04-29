@@ -97,8 +97,9 @@ nav ul li a {
 
 /* Estilo para as listas (ul) */
 ul {
-    list-style-type: disc; /* Adiciona o ponto (•) nas listas */
-    padding-left: 20px; /* Define o espaçamento à esquerda para as listas */
+    list-style-type: disc !important; /* Força a exibição do ponto (•) */
+    list-style-position: outside; /* Coloca o ponto fora do texto */
+    padding-left: 20px; /* Ajusta o espaçamento para a margem */
 }
 
 ul li {
@@ -107,7 +108,8 @@ ul li {
 
 /* Adicionalmente, se o problema persistir, forcei a definição do estilo */
 .collapsible .content ul {
-    list-style-type: disc !important; /* Garante que o ponto (•) seja exibido */
+    list-style-type: disc !important; /* Força que o ponto (•) seja exibido */
+    list-style-position: outside; /* Garante o alinhamento correto do ponto */
     padding-left: 20px; /* Mantém o espaçamento à esquerda */
 }
 
@@ -144,4 +146,3 @@ p {
 h1, h2, h3 {
     font-family: 'Arial', sans-serif;
 }
-
