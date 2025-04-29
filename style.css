@@ -1,99 +1,70 @@
+/* Estilos gerais para a página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
-    padding-top: 60px; /* espaço para nav */
 }
 
 .container {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-main .container {
-    background-color: white;
 }
 
 /* Navegação */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #0077b5;
-    z-index: 1000;
-}
-
 nav ul {
     list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
     margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 }
 
-nav a {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
-/* Cabeçalho */
+/* Estilo do cabeçalho */
 header {
-    background: #0077b5;
+    background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    margin-top: 0;
 }
 
 header img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Seções */
+h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-header h1,
-header p,
-header a {
-    color: white;
-    margin-top: 0;
+h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
-/* Links */
-a {
-    color: #0077b5;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Títulos */
-h1, h2 {
-    color: #0077b5;
-}
-
-/* Rodapé */
-footer {
-    background-color: #eee;
-    color: #555;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 /* Seções expansíveis */
@@ -122,21 +93,31 @@ footer {
     content: "−"; /* símbolo de menos para expandido */
 }
 
-/* Novo método de transição */
+/* Novo método de transição usando max-height e opacity */
 .collapsible .content {
+    max-height: 0;
     opacity: 0;
-    transform: translateY(-10px); /* Inicialmente, movemos o conteúdo para cima */
-    height: 0;
     overflow: hidden;
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(-10px);
+    transition: all 0.4s ease; /* Transição mais fluida */
     padding-top: 0;
 }
 
 .collapsible.active .content {
+    max-height: 1000px; /* valor bem alto para permitir que qualquer conteúdo seja expandido */
     opacity: 1;
-    transform: translateY(0); /* Quando expandido, volta para a posição original */
-    height: auto;
-    padding-top: 10px;
+    transform: translateY(0); /* Volta para a posição original */
+    padding-top: 10px; /* Ajuste o padding conforme necessário */
+}
+
+/* Listas dentro das seções */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 /* Responsivo */
@@ -153,5 +134,15 @@ footer {
     nav ul {
         flex-wrap: wrap;
         gap: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
     }
 }
