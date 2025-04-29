@@ -1,24 +1,49 @@
-/* Estilos gerais para a página */
-body {
-    font-family: Arial, sans-serif;
+/* Resetando alguns estilos básicos para garantir consistência */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #1e1e1e;
+    color: #fff;
     padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 /* Navegação */
+nav {
+    background-color: #2d2d2d;
+    padding: 10px 0;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
-    background-color: #333;
-    margin: 0;
 }
 
 nav ul li {
@@ -27,124 +52,96 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
+    color: #fff;
+    font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
+/* Estilos gerais do conteúdo */
+.container {
+    width: 80%;
+    margin: 20px auto;
 }
 
-/* Estilo do cabeçalho */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+/* Seções colapsáveis */
+.collapsible {
+    background-color: #fff;
     margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-/* Seções */
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.collapsible h2 {
+    background-color: #f7f7f7;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
 }
 
+.collapsible.active h2 {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.collapsible .content {
+    display: none;
+    padding: 15px;
+}
+
+.collapsible.active .content {
+    display: block;
+}
+
+/* Estilo para as listas (ul) */
+ul {
+    list-style-type: disc; /* Adiciona o ponto (•) nas listas */
+    padding-left: 20px; /* Define o espaçamento à esquerda para as listas */
+}
+
+ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* Adicionalmente, se o problema persistir, forcei a definição do estilo */
+.collapsible .content ul {
+    list-style-type: disc !important; /* Garante que o ponto (•) seja exibido */
+    padding-left: 20px; /* Mantém o espaçamento à esquerda */
+}
+
+/* Links no conteúdo */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Estilos adicionais para melhorar o design */
 h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    font-size: 1.3em;
 }
 
 p {
     line-height: 1.6;
-    margin-bottom: 15px;
 }
 
-/* Seções expansíveis */
-.collapsible h2 {
-    position: relative;
-    cursor: pointer;
-    background-color: #eee;
-    padding: 10px 10px 10px 40px; /* espaço à esquerda para o símbolo */
-    margin: 0;
-    border-radius: 5px;
-    user-select: none;
+/* Ajuste de fontes para maior legibilidade */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
 }
 
-.collapsible h2::before {
-    content: "+";
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-.collapsible.active h2::before {
-    content: "−"; /* símbolo de menos para expandido */
-}
-
-/* Novo método de transição usando max-height e opacity */
-.collapsible .content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(-10px);
-    transition: all 0.4s ease; /* Transição mais fluida */
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.collapsible.active .content {
-    max-height: 5000px; /* Removido limite fixo */
-    opacity: 1;
-    transform: translateY(0); /* Volta para a posição original */
-    padding-top: 10px; /* Ajuste o padding conforme necessário */
-    padding-bottom: 10px; /* Garantir que o conteúdo tenha um bom espaçamento */
-}
-
-/* Estilos para as listas */
-ul {
-    list-style-type: disc; /* Adiciona os pontos na lista */
-    padding-left: 20px; /* Define o espaçamento à esquerda */
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-    header img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        gap: 10px;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
