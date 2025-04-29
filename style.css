@@ -1,4 +1,3 @@
-/* Estilo geral do corpo da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -6,9 +5,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    padding-top: 60px; /* espaço para nav */
 }
 
-/* Container principal */
 .container {
     width: 90%;
     max-width: 900px;
@@ -17,20 +16,46 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Aplica fundo branco apenas no conteúdo principal */
 main .container {
     background-color: white;
 }
 
-/* Estilo do cabeçalho */
+/* Navegação */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0077b5;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho */
 header {
-    background: #0077b5; /* Azul LinkedIn */
+    background: #0077b5;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Imagem de perfil */
 header img {
     width: 120px;
     height: 120px;
@@ -39,14 +64,13 @@ header img {
     margin-bottom: 10px;
 }
 
-/* Força a cor branca no texto do cabeçalho */
 header h1,
 header p,
 header a {
     color: white;
 }
 
-/* Estilo dos links */
+/* Links */
 a {
     color: #0077b5;
     text-decoration: none;
@@ -63,8 +87,50 @@ h1, h2 {
 
 /* Rodapé */
 footer {
+    background-color: #eee;
+    color: #555;
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
-    color: #700;
+}
+
+/* Collapsibles */
+.collapsible h2 {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.collapsible .content {
+    display: none;
+    padding-top: 10px;
+}
+
+.collapsible.active .content {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
