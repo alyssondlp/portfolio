@@ -84,10 +84,8 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
 }
 
-/* Indicador de interatividade (cursor pointer) */
 .collapsible h2 {
     background-color: #ecf0f1;
     padding: 20px;
@@ -96,16 +94,6 @@ nav ul li a:hover {
     text-align: center;
     margin: 0;
     font-weight: 500;
-    transition: background-color 0.3s, border-color 0.3s;
-    border: 2px solid transparent; /* Definindo uma borda transparente por padrão */
-}
-
-.collapsible h2:hover,
-.collapsible h2:focus {
-    background-color: #1abc9c;
-    color: #fff;
-    border-color: #e74c3c; /* Adicionando uma borda colorida ao focar ou passar o mouse */
-    outline: none; /* Removendo o outline padrão do navegador */
 }
 
 .collapsible.active h2 {
@@ -113,12 +101,6 @@ nav ul li a:hover {
     color: #fff;
 }
 
-.collapsible h2:focus {
-    border-color: #3498db; /* Borda de foco com uma cor contrastante */
-    box-shadow: 0 0 5px #3498db; /* Foco visual mais forte */
-}
-
-/* Conteúdo da seção */
 .collapsible .content {
     display: none;
     padding: 20px;
