@@ -96,14 +96,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Collapsibles */
-.collapsible h2 {
-    cursor: pointer;
-    background-color: #eee;
-    padding: 10px;
-    margin: 0;
-    border-radius: 5px;
-}
 
 .collapsible .content {
     display: none;
