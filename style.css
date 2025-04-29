@@ -101,13 +101,15 @@ p {
     transform: translateY(-10px);
     transition: all 0.4s ease; /* Transição mais fluida */
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .collapsible.active .content {
-    max-height: 1000px; /* valor bem alto para permitir que qualquer conteúdo seja expandido */
+    max-height: 5000px; /* Removido limite fixo */
     opacity: 1;
     transform: translateY(0); /* Volta para a posição original */
     padding-top: 10px; /* Ajuste o padding conforme necessário */
+    padding-bottom: 10px; /* Garantir que o conteúdo tenha um bom espaçamento */
 }
 
 /* Listas dentro das seções */
