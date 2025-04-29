@@ -54,6 +54,7 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-top: 0;
 }
 
 header img {
@@ -68,6 +69,7 @@ header h1,
 header p,
 header a {
     color: white;
+    margin-top: 0;
 }
 
 /* Links */
