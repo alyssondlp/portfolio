@@ -118,20 +118,21 @@ footer {
     user-select: none;
 }
 
-/* Ícone de seta antes do texto */
 .collapsible h2::before {
-    content: "▶";
+    content: "+";
     position: absolute;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 0.3s ease;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
-/* Gira a seta quando a seção está aberta */
 .collapsible.active h2::before {
-    transform: translateY(-50%) rotate(90deg);
+    content: "−"; /* sinal de menos */
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
