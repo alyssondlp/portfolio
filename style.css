@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 60px; /* espaço para nav */
+    padding-top: 60px;
 }
 
 .container {
@@ -96,23 +96,12 @@ footer {
     font-size: 0.9em;
 }
 
-
-.collapsible .content {
-    display: none;
-    padding-top: 10px;
-}
-
-.collapsible.active .content {
-    display: block;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-/* Setinha animada */
+/* Seções expansíveis */
 .collapsible h2 {
     position: relative;
     cursor: pointer;
     background-color: #eee;
-    padding: 10px 10px 10px 40px; /* espaço à esquerda para a seta */
+    padding: 10px 10px 10px 40px;
     margin: 0;
     border-radius: 5px;
     user-select: none;
@@ -130,13 +119,20 @@ footer {
 }
 
 .collapsible.active h2::before {
-    content: "−"; /* sinal de menos */
+    content: "−";
 }
 
+/* Slide-down animation */
+.collapsible .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-top: 0;
+}
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.collapsible.active .content {
+    max-height: 500px;
+    padding-top: 10px;
 }
 
 /* Responsivo */
