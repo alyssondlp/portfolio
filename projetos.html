@@ -28,7 +28,7 @@
         <h2>Projetos em Power BI</h2>
         <div class="content">
             <p>Dashboard Supermarket Sales Dataset (Kaggle)</p>
-            <iframe title="supermercado" width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODk2Nzg1MzUtMmE1Ni00ZjAyLWIyNGUtZTAzZWI3Y2FhODc2IiwidCI6ImI1OTFhZTU0LTMzYzItNDU4OS1iZTY2LTkwMjFhNDE5NmM3YyJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe title="supermercado" width="800" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODk2Nzg1MzUtMmE1Ni00ZjAyLWIyNGUtZTAzZWI3Y2FhODc2IiwidCI6ImI1OTFhZTU0LTMzYzItNDU4OS1iZTY2LTkwMjFhNDE5NmM3YyJ9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
     </section>
 
@@ -39,12 +39,31 @@
         </div>
     </section>
 
-    <section class="collapsible active">
-        <h2>Projetos em Python</h2>
-        <div class="content">
-            <p><a href="https://nbviewer.org/github/SEUUSUARIO/NOMEDOREPO/blob/main/projeto_energia.ipynb" target="_blank">Sistema de Gerenciamento de Energia Residencial</a></p>
-        </div>
-    </section>
+<section class="collapsible">
+  <h2>Python – Análise de Futebol com Dados Abertos</h2>
+  <div class="content">
+    <p>Projeto em Python para análise de desempenho de clubes de futebol usando dados históricos. As análises incluem manipulação com Pandas e visualizações com Matplotlib e Seaborn.</p>
+
+    <a href="https://github.com/alyssondlp/PythonFutebol" target="_blank">📂 Ver repositório no GitHub</a><br>
+    <a href="https://github.com/alyssondlp/PythonFutebol/archive/refs/heads/main.zip" download>📥 Baixar projeto (.zip)</a>
+
+    <h3>📊 Visualizações:</h3>
+    <img src="assets/2024.png" alt="Gráfico de análise 2024" width="100%" style="margin-bottom: 20px;">
+    <img src="assets/2025.png" alt="Gráfico de análise 2025" width="100%">
+
+    <h3>🧾 Trecho do código:</h3>
+    <pre><code>
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('dados_brasileirao.csv')
+clubes = df['clube'].value_counts().head(10)
+clubes.plot(kind='barh', title='Top 10 clubes com mais partidas')
+plt.xlabel('Número de jogos')
+plt.show()
+    </code></pre>
+  </div>
+</section>
 
 </main>
 
