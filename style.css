@@ -172,6 +172,20 @@ p {
     font-size: 1.1em;
     margin-bottom: 15px;
 }
+.imagens-lado-a-lado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* importante para telas menores */
+    margin-bottom: 20px;
+}
+
+.imagens-lado-a-lado img {
+    max-width: 100%;
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
