@@ -1,15 +1,15 @@
 # Portfolio
 
-<h1 align="center">Olá, sou Alysson Ponciano 👋</h1>
+<h1 align="center">Olá, sou Alysson de Lima Ponciano </h1>
 
 <p align="center">
-  Desenvolvedor Front-End | UI/UX Enthusiast | Criador de soluções digitais
+  M.Sc. student | Análise de dados | SQL | Power BI | PCM | Engenharia Elétrica
 </p>
 
 <p align="center">
-  <a href="mailto:alyssonponciano@gmail.com">Email</a> •
+  <a href="mailto:eng.alponciano@gmail.com">Email</a> •
   <a href="https://www.linkedin.com/in/alysson-ponciano/">LinkedIn</a> •
-  <a href="https://github.com/alyssonponciano">GitHub</a> •
+  <a href="https://github.com/alyssondlp">GitHub</a> •
   <a href="#projetos">Projetos</a>
 </p>
 
@@ -17,12 +17,13 @@
 
 ## 🧠 Sobre mim
 
-Sou um desenvolvedor apaixonado por tecnologia, interfaces bem feitas e soluções criativas. Atualmente estudo/atuo com foco em tecnologias como:
+Tenho experiência profissional em manutenção, tecnologia, análise de dados e atualmente curso mestrado em Engenharia Elétrica na UFC. Apaixonado por tecnologia, dados e melhorias contínuas. Meus principais conhecimentos envolvem Power BI, SQL, Excel, PCM, ERP e automação de relatórios.
 
-- HTML, CSS e JavaScript
-- React.js e TypeScript
-- Figma e UI Design
-- APIs e integrações modernas
+- Pacote Office: Microsoft Word, Excel (avançado), PowerPoint, Microsoft Teams
+- Ferramentas de Gestão: Trello, Task Meister
+- Programação e Banco de Dados: Python, C, MATLAB, SQL Server
+- Desenho e Visualização: AutoCAD, ZWCAD e Power BI
+- ERP: Protheus e Optimus
 
 ---
 
@@ -46,12 +47,12 @@ Outro projeto legal com foco em performance, design ou funcionalidade.
 
 Se quiser bater um papo, trocar ideia ou fazer um projeto juntos:
 
-- 📧 **Email:** [alyssonponciano@gmail.com](mailto:alyssonponciano@gmail.com)
+- 📧 **Email:** [eng.alponciano@gmail.com](mailto:eng.alponciano@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/alysson-ponciano](https://linkedin.com/in/alysson-ponciano)
-- 💻 **GitHub:** [github.com/alyssonponciano](https://github.com/alyssonponciano)
+- 💻 **GitHub:** [github.com/alyssonponciano](https://github.com/alyssondlp)
 
 ---
 
 <p align="center">
-  Feito com ❤️ por Alysson Ponciano
+  Feito por Alysson Ponciano
 </p>
