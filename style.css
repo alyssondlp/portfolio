@@ -77,6 +77,11 @@ nav ul li a:hover {
     margin: 30px auto;
 }
 
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Seções colapsáveis */
 .collapsible {
     background-color: #fff;
