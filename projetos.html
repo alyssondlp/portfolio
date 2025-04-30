@@ -42,26 +42,16 @@
 <section class="collapsible">
   <h2>Python – Análise de Futebol com Dados Abertos</h2>
   <div class="content">
-    <p>Projeto em Python para análise de desempenho de clubes de futebol usando dados históricos. As análises incluem manipulação com Pandas e visualizações com Matplotlib e Seaborn.</p>
+    <p>Projeto em Python para análise de desempenho de clubes no Brasileirão utilizando dados públicos. As visualizações destacam padrões e frequência de jogos dos clubes mais populares.</p>
 
-    <a href="https://github.com/alyssondlp/PythonFutebol" target="_blank">📂 Ver repositório no GitHub</a><br>
-    <a href="https://github.com/alyssondlp/PythonFutebol/archive/refs/heads/main.zip" download>📥 Baixar projeto (.zip)</a>
+    <div style="margin: 20px 0;">
+      <a class="botao" href="https://github.com/alyssondlp/PythonFutebol" target="_blank">📂 Ver no GitHub</a>
+      <a class="botao" href="https://github.com/alyssondlp/PythonFutebol/archive/refs/heads/main.zip" download>📥 Baixar Projeto (.zip)</a>
+    </div>
 
     <h3>📊 Visualizações:</h3>
-    <img src="assets/2024.png" alt="Gráfico de análise 2024" width="100%" style="margin-bottom: 20px;">
-    <img src="assets/2025.png" alt="Gráfico de análise 2025" width="100%">
-
-    <h3>🧾 Trecho do código:</h3>
-    <pre><code>
-import pandas as pd
-import matplotlib.pyplot as plt
-
-df = pd.read_csv('dados_brasileirao.csv')
-clubes = df['clube'].value_counts().head(10)
-clubes.plot(kind='barh', title='Top 10 clubes com mais partidas')
-plt.xlabel('Número de jogos')
-plt.show()
-    </code></pre>
+    <img src="assets/2024.png" alt="Gráfico 1" style="width: 90%; max-width: 600px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">
+    <img src="assets/2025.png" alt="Gráfico 2" style="width: 90%; max-width: 600px; display: block; margin-left: auto; margin-right: auto;">
   </div>
 </section>
 
